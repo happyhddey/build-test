@@ -9,6 +9,8 @@ import StudentSignUp from './components/StudentSignUp'
 import OwnerSignUp from './components/OwnerSignUp';
 import SignIn from './components/SignIn';
 import reactDom from 'react-dom';
+import StoresPageForStudent from './pages/StoresPageFOrUser/WatchStoresPage'
+import ReservationPage from './pages/ReservationPage/ReservationPage'
 
 function App() {
 
@@ -23,8 +25,10 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
         <Route exact path="/" element={<SignIn />} />
-        <Route path="/SignUp/Owner" element={<OwnerSignUp />} exact/>
-        <Route path="/SignUp/Student" element={<StudentSignUp />} exact />
+        <Route exact path="/SignUp/Owner" element={<OwnerSignUp />} />
+        <Route exact path="/SignUp/Student" element={<StudentSignUp />}  />
+        <Route exact path="/StoresPage" element={< StoresPageForStudent/>} />
+        <Route exact path="/Reservation" element={<ReservationPage />} />
         </Routes>
       </BrowserRouter>
     </div>
