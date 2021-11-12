@@ -1,4 +1,3 @@
-import { firestore } from "firebase-admin";
 import firebase from "firebase/compat/app";
 import 'firebase/compat/firestore';
 // TODO: Add SDKs for Firebase products that you want to use
