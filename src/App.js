@@ -12,6 +12,8 @@ import reactDom from 'react-dom';
 import StoresPageForStudent from './pages/StoresPageFOrUser/WatchStoresPage'
 import ReservationPage from './pages/ReservationPage/ReservationPage'
 
+// test
+
 function App() {
 
   useEffect(() => {
